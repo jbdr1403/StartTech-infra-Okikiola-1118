@@ -1,0 +1,164 @@
+############################
+# TERRAFORM – CORE
+############################
+
+# Local Terraform directories
+.terraform/
+**/.terraform/*
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Terraform plan files
+*.tfplan
+tfplan
+tfplan.out
+plan.out
+
+# Terraform variable files (often contain secrets)
+*.tfvars
+*.tfvars.json
+terraform.tfvars
+terraform.tfvars.json
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI configuration
+.terraformrc
+terraform.rc
+
+# Crash logs
+crash.log
+*.crash.log
+
+############################
+# TERRAFORM – LOCK FILES
+############################
+
+# (Optional – safe to commit, but ok to ignore if you want zero noise)
+.terraform.lock.hcl
+
+############################
+# CLOUD PROVIDER SECRETS
+############################
+
+# AWS
+.aws/
+aws_credentials
+aws_config
+
+# Azure
+.azure/
+*.azureprofile
+
+# GCP
+.gcloud/
+*.json
+service-account*.json
+
+############################
+# CI / CD SECRETS
+############################
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# GitHub Actions secrets (local testing)
+.github/secrets
+.github/*.env
+
+############################
+# SSH KEYS & CERTS
+############################
+
+*.pem
+*.key
+*.crt
+*.cer
+*.pfx
+*.p12
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+*.ppk
+
+############################
+# KUBERNETES
+############################
+
+kubeconfig
+kubeconfig.*
+.kube/
+helm-secrets.yaml
+values-secret.yaml
+
+############################
+# DATABASE / APP SECRETS
+############################
+
+database.yml
+secrets.yml
+secrets.json
+credentials.json
+credentials.yml
+config.json
+
+############################
+# LOGS & TEMP FILES
+############################
+
+*.log
+logs/
+tmp/
+temp/
+
+############################
+# OS / EDITOR JUNK
+############################
+
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+############################
+# NODE / PYTHON / GENERAL
+############################
+
+node_modules/
+dist/
+build/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+############################
+# MISC SAFETY NET
+############################
+
+*.backup
+*.bak
+*.old
+*.local
+*.secret
+*.private
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+tfplan
+terraform.tfvars
+.crash.log
+
